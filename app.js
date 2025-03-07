@@ -33,9 +33,10 @@ function limpiarCaja(){
 function agregarAmigo(){
    
     capturaAmigo = document.getElementById("amigo").value.toUpperCase();
+    console.log(capturaAmigo.length);
     
 
-    if (capturaAmigo){
+    if (capturaAmigo.length >= 3 ){
         
         amigos.push(capturaAmigo);
         limpiarCaja();
