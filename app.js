@@ -97,7 +97,7 @@ function reiniciarJuego(){
 
 function alertReiniciar() {
     Swal.fire({
-        title: '¡juego Reiniciado!',
+        title: '¡Juego Reiniciado!',
         text: 'Gracias por jugar',
         icon: 'success', // Puedes cambiar el ícono (success, error, warning, info, question)
         confirmButtonText: 'Aceptar',
@@ -134,7 +134,7 @@ function alertAgregarMasAmigos() {
 function alertNombreCorrecto() {
     Swal.fire({
         title: '¡Disculpa!',
-        text: 'Favor de capturar el nombre de tus amigos o en su defecto esposa XD Ej: Liliana, Belinda etc.',
+        text: 'Favor de capturar el nombre de tus amigos Ej: Liliana, Belinda etc.',
         icon: 'Warning', // Puedes cambiar el ícono (success, error, warning, info, question)
         confirmButtonText: 'Aceptar',
         customClass: {
