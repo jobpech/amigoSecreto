@@ -54,12 +54,14 @@ function sortearAmigo() {
     let numeroMaximo = amigos.length; 
     let numeroSorteado = Math.floor(Math.random()*numeroMaximo)+1;
 
-    if(amigos.length > 2){
+    if(amigos.length >= 2){
         let lista = document.getElementById("resultado");
         lista.innerHTML = ""; //Limpiar lista
         let li = document.createElement("li"); //crear lista
         li.textContent = amigos[numeroSorteado]; //colocar texto
         lista.appendChild(li);//agregar a lista ul
+        document.getElementById("reiniciar").disabled = false; 
+        
         return;
     }if (amigos.length >= 1) {
         alert("Favor de agregar mas de un amigo a la lista");
@@ -68,6 +70,20 @@ function sortearAmigo() {
         alert("Favor de agregar amigos a la lista para sortar");
         return;
     }
+
+}
+
+//Reiniciar juego
+function reiniciarJuego(){
+    let lista1 = document.getElementById("listaAmigos");
+    lista1.innerHTML = ""; //Limpiar lista
+    let lista2 = document.getElementById("resultado");
+    lista2.innerHTML = ""; //Limpiar lista
+    amigos = [];
+    document.getElementById("reiniciar").disabled = true;
+    alert ("Juego Reiniciado");
+    return
+    
 
 }
 

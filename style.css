@@ -1,11 +1,13 @@
 :root {
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
+    --color-tertiary: #faf9f9;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
+    --color-button-hover-blue: #061c81;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --color-button-verde:#0b27a3;
 }
 
 /* Estilos generales */
@@ -153,10 +155,36 @@ ul {
     font-size: 16px;
 }
 
+.button-draw2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button-verde);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
 .button-draw img {
+    margin-right: 40px;
+}
+.button-draw2 img {
     margin-right: 40px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+
+.button-draw2:hover {
+    background-color: var(--color-button-hover-blue);
+}
+
+button:disabled {
+    opacity: 0.5; /* Ejemplo: reducir la opacidad */
+    cursor: not-allowed; /* Cambiar el cursor */
+    background-color: #ccc; /* Cambiar el color de fondo */
+}
+
